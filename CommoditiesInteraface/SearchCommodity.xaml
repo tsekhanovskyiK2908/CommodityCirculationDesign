@@ -1,0 +1,38 @@
+﻿<Window x:Class="CommoditiesInteraface.SearchCommodity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommoditiesInteraface"
+        mc:Ignorable="d"
+        Title="SearchCommodity" Width="800" Height="650">
+    <Grid>
+        <DataGrid Margin="10,204.591,497.667,266.928">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name"/>
+                <DataGridTextColumn Header="Brand"/>
+                <DataGridTextColumn Header="Model"/>
+                <DataGridTextColumn Header="Price"/>
+                <DataGridTextColumn Header="Store"/>
+                <DataGridTextColumn Header="Count in store"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Margin="435.267,438.272,10,30">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name"/>
+                <DataGridTextColumn Header="Brand"/>
+                <DataGridTextColumn Header="Model"/>
+                <DataGridTextColumn Header="Price"/>
+                <DataGridTextColumn Header="Warehouse"/>
+                <DataGridTextColumn Header="Count in warehouse"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Type commodity property" HorizontalAlignment="Left" Margin="10,83.6,0,0" VerticalAlignment="Top" Height="33.591" Width="146.793"/>
+        <TextBox HorizontalAlignment="Left" Height="21.591" Margin="220.4,83.6,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120.8"/>
+        
+        <Label Content="Avaliable in stores" HorizontalAlignment="Left" Margin="317.303,131,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Avaliable in warehouses" HorizontalAlignment="Left" Margin="280.833,375,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="BtnSearchCommodities" Content="Search" HorizontalAlignment="Left" Margin="468,86.6,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Search Commodities" HorizontalAlignment="Left" Margin="301.8,19.6,0,0" VerticalAlignment="Top" FontSize="24"/>
+    </Grid>
+</Window>
